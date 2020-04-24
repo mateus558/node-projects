@@ -1,0 +1,24 @@
+
+.login-form {
+    width: 100%;
+    max-width: 320px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.access-form {
+    width: 100%;
+    max-width: 720px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.login-form h1{
+    margin-right: 15px;
+    text-align: center;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+}
