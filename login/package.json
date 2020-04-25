@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "node app.js"
   },
-  "author": "",
+  "author": "Mateus Coutinho Marim",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
