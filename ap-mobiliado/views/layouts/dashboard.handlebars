@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/css/simple-sidebar.css" rel="stylesheet">
+</head>
+<body>
+  <div class="d-flex" id="wrapper">
+    {{>_sidebar}}
+    <div id="page-content-wrapper">
+
+      {{>_pagecontent}}
+      <div class="container-fluid">
+        {{>_msg}}
+        {{{body}}}        
+      </div>
+    </div>
+  </div>
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/dropdown-item.js"></script>
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html> 

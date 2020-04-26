@@ -8,7 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Blog NodeJS</title>
+    <title>{{title}}</title>
 </head>
 <body>
     {{>_topimg}}
@@ -19,7 +19,7 @@
 
     {{/if}}
 
-    <div class="container">
+    <main role="main" style="width:100%; margin-right:100px;"class="container">
         {{#if error}}
             <div class="alert alert-danger">{{error}}</div>
         {{else}}
@@ -27,8 +27,9 @@
         {{/if}}
         {{>_msg}}
         {{{body}}}
-    </div>
-    
+    </main>
+    <span class="w-100"></span>
+    {{>_footer}}
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

@@ -1,0 +1,18 @@
+{{#each users}}
+    <div class="card mt-4">
+        <div class="card-body">
+            Nome: {{name}}
+            <br>
+            E-mail: {{email}}
+            <br>
+            <small>Data de registro: {{date_creation}}</small>
+            <hr>
+            <form action="/admin/users/remove" method="post">
+                <input type="hidden" name="id" value="{{_id}}">
+                <button type="submit" class="btn btn-danger">Remover</button>
+            </form>
+        </div>
+    </div>
+{{else}}
+    <p>Nenhum usuário cadastrado.</p>
+{{/each}}

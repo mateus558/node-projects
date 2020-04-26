@@ -1,0 +1,25 @@
+{{#each errors}}
+    <div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}
+<h3>Crie um administrador:</h3>
+<hr>
+
+<div class="d-flex justify-content-center">
+    <div class="card w-100">
+        <div class="card-body">
+            <form action="/admin/users/create" method="post">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" class="form-control" required>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" class="form-control" required>
+                <label for="senha">Senha: </label>
+                <input type="password" name="password" class="form-control" required>
+                <label for="password2">Repita a senha: </label>
+                <input type="password" name="password2" class="form-control" required>
+                <button type="submit" class="btn btn-success mt-4"> Criar conta</button>
+            </form>
+        </div>
+    </div>
+</div>
